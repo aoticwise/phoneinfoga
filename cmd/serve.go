@@ -18,7 +18,7 @@ func init() {
 	rootCmd.AddCommand(serveCmd)
 
 	// Register flags
-	serveCmd.PersistentFlags().IntVarP(&httpPort, "port", "p", 5000, "HTTP port")
+	serveCmd.PersistentFlags().IntVarP(&httpPort, "port", "p", 1000, "HTTP port")
 	serveCmd.PersistentFlags().BoolVar(&disableClient, "no-client", false, "Disable web client (REST API only)")
 }
 
